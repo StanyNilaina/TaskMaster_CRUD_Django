@@ -1,0 +1,21 @@
+{% extends 'tasks/base.html' %}
+
+{% block content %}
+    <a class="btn" href="{% url 'task-create' %}">➕ Nouvelle tâche</a>
+
+    <ul class="task-list">
+        {% for task in tasks %}
+            <li>
+                <strong {% if task.completed %}style="text-decoration: line-through;"{% endif %}>
+                    {{ task.title }}
+                </strong>
+                <span class="actions">
+                    <a href="{% url 'task-update' task.id %}">✏️</a>
+                    <a href="{% url 'task-delete' task.id %}">🗑️</a>
+                </span>
+            </li>
+        {% empty %}
+            <li>Aucune tâche pour le moment.</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
