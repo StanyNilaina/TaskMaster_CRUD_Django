@@ -1,6 +1,6 @@
 # 📋 TaskMaster
 
-TaskMaster est une application web Django qui permet de gérer une liste de tâches (CRUD) avec une interface claire, responsive et agréable en CSS pur. Ce projet a été conçu pour mon portfolio.
+TaskMaster est une application web Django qui permet de gérer une liste de tâches (CRUD) avec une interface claire, responsive et agréable en CSS pur. Ce projet a été conçu pour portfolio.
 
 ## 🚀 Fonctionnalités
 
@@ -17,7 +17,7 @@ TaskMaster est une application web Django qui permet de gérer une liste de tâc
 ## 📦 Installation locale
 
 ```bash
-git clone https://github.com/votre-utilisateur/taskmaster.git
+git clone https://github.com/StanyNilaina/TaskMaster_CRUD_Django.git
 cd taskmaster
 python -m venv venv
 venv\Scripts\activate
